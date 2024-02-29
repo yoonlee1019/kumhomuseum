@@ -11,8 +11,8 @@ body {
 img {
   display: block;
   width: 720px;
-  height: 720px;
-  object-fit: cover;
+  height: 600px;
+  object-fit: contain;
 }
 
 a {
@@ -32,7 +32,7 @@ h3 {
   font-size: 33px;
   font-weight: 700;
   letter-spacing: 8px;
-  line-height: 55px;
+  line-height: 65px;
   text-align: center;
 }
 
@@ -44,7 +44,7 @@ h4 {
 
 h5 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 5px;
   text-align: center;
 }
@@ -74,7 +74,7 @@ header {
   width: 1440px;
   background-color: #e1e1e1;
   border-bottom: 1px solid #333;
-  position: fixed;
+  position: relative;
   top: 0;
   z-index: 2;
 }
@@ -82,13 +82,13 @@ header {
 header .inner {
   display: flex;
   justify-content: center;
-  height: 300px;
+  height: 263px;
 }
 
 header .sub-menu {
   display: flex;
   position: absolute;
-  top: 25px;
+  top: 3px;
   right: 0;
 }
 
@@ -131,14 +131,14 @@ header .sub-menu ul.menu li a:hover {
 
 header .logo {
   display: block;
-  width: 1400px;
+  width: 1425px;
   position: absolute;
-  top: 60px;
+  top: 35px;
   margin: 0 auto;
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;
-  padding-top: 27px;
-  padding-bottom: 37px;
+  padding-top: 26px;
+  padding-bottom: 36.5px;
   transition: .5s;
 }
 
@@ -159,14 +159,14 @@ header .main-menu {
 
 header .main-menu .item .item__name {
   width: 240px;
-  height: 96px;
-  font-size: 18px;
-  font-weight: 600;
+  height: 76px;
+  font-size: 20px;
+  font-weight: 700;
   letter-spacing: 5px;
   transition: .5s;
   background-color: #f0f0f0;
 
-  line-height: 96px;
+  line-height: 76px;
   text-align: center;
   cursor: pointer;
 }
@@ -175,7 +175,7 @@ header .main-menu .item .item__name::before {
   content: "";
   display: block;
   width: 1px;
-  height: 86px;
+  height: 66px;
   background-color: #333;
   position: absolute;
   top: 0;
@@ -254,7 +254,7 @@ header .main-menu .item .item__contents .contents__menu > ul > li:hover {
 /* 현재전시 */
 .main {
   position: absolute;
-  top: 300px;
+  top: 263px;
 }
 
 .main .container {
@@ -263,19 +263,30 @@ header .main-menu .item .item__contents .contents__menu > ul > li:hover {
 
 .main .container .poster {
   width: 720px;
-  height: 720px;
-  background-color: orange;
+  height: 600px;
+  background-color: #ff614c;
   position: relative;
-  border-right: 1px solid #333;
   border-bottom: 1px solid #333;
   z-index: 1;
+}
+
+.main .container .poster::after {
+  content: "";
+  width: 1px;
+  height: 585px;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }
 
 .main .container .current {
   display: block;
   width: 720px;
-  height: 160px;
-  padding: 100px 0;
+  height: 140px;
+  padding: 80px 0;
   text-align: center;
   transition: .5s;
   background-color:;
@@ -289,9 +300,9 @@ header .main-menu .item .item__contents .contents__menu > ul > li:hover {
 
 .main .container .time {
   width: 360px;
-  padding-top: 100px;
+  padding-top: 70px;
   position: absolute;
-  top: 360px;
+  top: 263px;
   left: 720px;
   border-top: 1px solid #333;
   text-align: center;
@@ -299,23 +310,33 @@ header .main-menu .item .item__contents .contents__menu > ul > li:hover {
 
 .main .container .park {
   width: 360px;
-  padding-top: 100px;
-  padding-bottom: 98.87px;
+  padding-top: 70px;
+  padding-bottom: 68.87px;
   position: absolute;
-  top: 360px;
+  top: 263px;
   left: 1080px;
   border-top: 1px solid #333;
-  border-left: 1px solid #333;
   text-align: center;
 }
 
+.main .container .park::before {
+  content: "";
+  width: 1px;
+  height: 285px;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
 
 /* FOOTER */
 .kumho {
   display: block;
-  width: 1400px;
+  width: 1440px;
   position: absolute;
-  top: 1020px;
+  top: 863px;
   margin: 0 auto;
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;
@@ -330,9 +351,9 @@ header .main-menu .item .item__contents .contents__menu > ul > li:hover {
 
 .group {
   display: block;
-  width: 1400px;
+  width: 1440px;
   position: absolute;
-  top: 1065px;
+  top: 908px;
   background-color: #f0f0f0;
   border-top: 1px solid #333;
 }
@@ -343,12 +364,12 @@ header .main-menu .item .item__contents .contents__menu > ul > li:hover {
 
 .group ul.group-go li {
   position: relative;
-  left: 165px;
+  left: 230px;
 }
 
 .group ul.group-go li a {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   padding: 20px 20px 208px 20px;
   color: #333;
@@ -362,14 +383,36 @@ header .main-menu .item .item__contents .contents__menu > ul > li:hover {
 footer {
   background-color: #e1e1e1;
   position: absolute;
-  top: 1130px;
-  width: 1110px;
+  top: 973px;
+  width: 1100px;
   height: 185px;
   left: 165px;
   border-top: 1px solid #333;
-  border-left: 1px solid #333;
-  border-right: 1px solid #333;
 }
+
+footer::before {
+  content: "";
+  width: 1px;
+  height: 170px;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+footer::after {
+  content: "";
+  width: 1px;
+  height: 170px;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1100px;
+  margin: auto;
+}
+
 
 footer .inner {
   width: 910px;
