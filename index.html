@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>금호미술관</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="금호미술관" />
+  <meta property="og:title" content="KUMHO MUSEUM OF ART" />
+  <meta property="og:description" content="금호미술관은 개관 이래 동시대 미술의 흐름을 진단하고자 다양한 전시들을 기획, 개최하고 있다. 특정한 사조나 장르에 편중하기보다 한국미술의 전체적인 전개양상에 주목한 금호미술관 기획전시는 현대미술의 주요 쟁점과 이들을 아우르는 대표 작가들로 구성하여 현대미술의 흐름을 조망함과 동시에 관람객에게는 다양한 미적 가치를 경험하는 기회를 제공하고자 한다." />
+  <meta property="og:image" content="https://i.namu.wiki/i/43GvuCCv41myz4mkBSvn5tltXbwZYP0SYu_9LsqPJmUMr_ixGbjfmllHH88GDdOoAqiM7nZ8ETNSKenUkjGlsg.webp" />
+  <meta property="og:url" content="http://www.kumhomuseum.com/" />
+
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="금호미술관s" />
+  <meta property="twitter:title" content="KUMHO MUSEUM OF ART" />
+  <meta property="twitter:description" content="금호미술관은 개관 이래 동시대 미술의 흐름을 진단하고자 다양한 전시들을 기획, 개최하고 있다. 특정한 사조나 장르에 편중하기보다 한국미술의 전체적인 전개양상에 주목한 금호미술관 기획전시는 현대미술의 주요 쟁점과 이들을 아우르는 대표 작가들로 구성하여 현대미술의 흐름을 조망함과 동시에 관람객에게는 다양한 미적 가치를 경험하는 기회를 제공하고자 한다." />
+  <meta property="twitter:image" content="https://i.namu.wiki/i/43GvuCCv41myz4mkBSvn5tltXbwZYP0SYu_9LsqPJmUMr_ixGbjfmllHH88GDdOoAqiM7nZ8ETNSKenUkjGlsg.webp" />
+  <meta property="twitter:url" content="http://www.kumhomuseum.com/" />
+
+  <link rel="icon" href="data:image/jpeg;base64,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">
+  <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <script defer src="./js/main.js"></script>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+    <div class="inner">
+
+      <div class="sub-menu">
+        <ul class="menu">
+          <li>
+            <a href="/">로그인</a>
+          </li>
+          <li>
+            <a href="/">회원가입</a>
+          </li>
+          <li>
+            <a href="/">사이트맵</a>
+          </li>
+          <li>
+            <a href="/">문화재단</a>
+          </li>
+          <li>
+            <a href="/">금호아트홀</a>
+          </li>
+          <li>
+            <a href="/">ENG</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="logo">
+        <h3>금호미술관</h3>
+        <h5>KUMHO MUSEUM OF ART</h5>
+      </div>
+
+      <ul class="main-menu">
+        <li class="item">
+          <div class="item__name">미술관</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>인사말</li>
+                <li>미술관소개</li>
+                <li>시설안내</li>
+                <li>찾아오시는길</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">전시</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>현재전시</li>
+                <li>이전전시</li>
+                <li>예정전시</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">교육</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>전시연계프로그램</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">소장품</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>현대미술</li>
+                <li>디자인</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">스튜디오</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>스튜디오소개</li>
+                <li>입주작가소개</li>
+                <li>프로그램</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">공지사항</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>공지사항</li>
+                <li>질의응답</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+  </header>
+
+  <!-- 현재전시 -->
+  <section class="main">
+    <div class="container">
+      <div class="poster">
+        <img src="./images/kumho_poster.jpeg" alt="현재 전시">
+      </div>
+      <div class="current">
+          <h4>현재 전시</h4>
+          <br>
+          <h6>마주한 세계: 풍경의 안팎</h6>
+          <span>2023.11.24 - 2024.2.4</span>
+      </div>
+      <div class="time">
+        <h4>관람 시간</h4>
+        <br>
+        <span>화 - 일</span>
+        <h6>10:00 - 18:00</h6>
+        <p>17:30 입장 마감</p>
+      </div>
+      <div class="park">
+        <h4>주차 정보</h4>
+        <br>
+        <span>&nbsp</span>
+        <h6>주차 불가</h6>
+        <p>인근 유료 주차장 별도 이용</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+  <div class="kumho">KUMHO MUSEUM OF ART</div>
+
+  <div class="group">
+    <ul class="group-go">
+      <li>
+        <a href="/">금호고속</a>
+      </li>
+      <li>
+        <a href="/">금호터미널</a>
+      </li>
+      <li>
+        <a href="/">금호건설</a>
+      </li>
+      <li>
+        <a href="/">아시아나항공</a>
+      </li>
+      <li>
+        <a href="/">아시아나IDT</a>
+      </li>
+      <li>
+        <a href="/">에어부산</a>
+      </li>
+      <li>
+        <a href="/">아시아나에어포트</a>
+      </li>
+      <li>
+        <a href="/">아시아나세이버</a>
+      </li>
+      <li>
+        <a href="/">에어서울</a>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    <div class="inner">
+
+      <ul class="menu">
+        <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0)">이메일무단수집거부</a></li>
+        <li><a href="javascript:void(0)">이용약관</a></li>
+        <li><a href="javascript:void(0)">이메일문의</a></li>
+      </ul>
+
+      <div class="info">
+        서울특별시 종로구 삼청로 18 금호미술관 TEL. 02-720-5114 FAX. 02-720-6474 E-mail. kumhoarts@kumhoarts.com
+        <br>COPYRIGHT <span class="this-year"></span> KUMHO ASIANA MUSEUM ALL RIGHT RESERVED
+      </div>
+
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
