@@ -213,7 +213,7 @@ header .main-menu .item .item__contents .contents__menu {
 }
 
 header .main-menu .item .item__contents .contents__menu > ul {
-  padding: 22px;
+  padding: 13px;
   display: flex;
   height: auto;
   justify-content: center;
@@ -234,7 +234,7 @@ header .main-menu .item .item__contents .contents__menu > ul > li::before {
   content: "";
   display: block;
   width: 1px;
-  height: 60px;
+  height: 32px;
   background-color: #333;
   position: absolute;
   top: 0;
